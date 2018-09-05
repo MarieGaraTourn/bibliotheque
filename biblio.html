@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Bibliothèque</title>
+	</head>
+	
+	<!--<link rel="stylesheet" type="text/css" href="biblio.css">-->
+	
+	<body>
+	
+		<h1>Add Book</h1>
+	
+		<fieldset class="center">
+
+				Title:<br>
+				<input id="title" type="text" name="title"><br><br>
+				Author:<br>
+				<input id="author" type="text" name="author"><br><br>
+				ISBN:<br>
+				<input id="isbn" type="text" name="isbn"><br><br>
+				<button type="button" onclick="addToList()" id="add" class="buttonAdd">Add</button><br><br>
+				
+		</fieldset>
+		
+		<h1>Book List</h1>
+		
+		<fieldset class="center">
+			
+			<table border ='1' id="table">
+				<!-- <caption>Book List</caption> -->
+				<tbody>
+					<tr>
+						<th>Title</th>
+						<th>Author</th>
+						<th>ISBN</th>
+					</tr>
+				</tbody>
+			</table>
+			
+		</fieldset>
+		
+		<!-- <script src="testTime.js"></script> -->
+		<script src="biblioJs.js"></script>
+		
+	</body>
+
+
+</html>
