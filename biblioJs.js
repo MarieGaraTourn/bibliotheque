@@ -1,3 +1,12 @@
+//Fonction qui supprime un élément de la liste
+var close = document.getElementsByClassName("close");
+for (let i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+   var row = this.parentElement;
+   row.remove();
+ }
+}
+
 //Fonction qui ajoute les entrees dans la liste affichee via un bouton
 function addToList() {
   var list = document.getElementById("table");
@@ -36,15 +45,6 @@ function addToList() {
     }
   }
 
-}
-
-//Fonction qui supprime un élément de la liste
-var close = document.getElementsByClassName("close");
-for (let i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-   var row = this.parentElement;
-   row.remove();
- }
 }
 
 
