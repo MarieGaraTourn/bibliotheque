@@ -28,7 +28,7 @@ function addToList() {
   span.className = "close";
   span.appendChild(txt);
   row.appendChild(span);
-
+ 
 
   for (let i = 0; i < close.length; i++) {
     close[i].onclick = function() {
