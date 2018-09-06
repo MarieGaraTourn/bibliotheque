@@ -88,6 +88,9 @@ function addToList() {
     }
   }
 }
+	document.getElementById("title").value='';
+	document.getElementById("author").value='';
+	document.getElementById("isbn").value='';
 }
 
 //Fonction qui supprime un élément de la liste
@@ -102,4 +105,5 @@ for (let i = 0; i < close.length; i++) {
    /* localStorage.setItem("arrayList", JSON.stringify(tab));//stockage des infos en local
     var storedArray = JSON.parse(localStorage.getItem("tab"));//pour la lecture des infos stockees
     console.table(storedArray);//affichage console sous forme de liste*/
+
 
