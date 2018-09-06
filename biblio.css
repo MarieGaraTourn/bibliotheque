@@ -67,7 +67,7 @@
 
 .w3-hoverable tbody tr:hover {
 	color:#000!important;
-	background-color:rgba(0, 153, 153, 0.5)!important
+	background-color:rgba(0, 102, 102, 0.5)!important;
 }
 
 h1{
@@ -80,5 +80,14 @@ label {
 	font-style: italic;
 	font-weight: bold;
 	color:#006666;
+}
+
+.notif {
+	font-size: 30px;
+	color:#FFF;
+	background-color:rgba(0, 102, 102, 0.9);
+	text-align:center;
+	margin:auto;
+	width:30%;
 }
 
