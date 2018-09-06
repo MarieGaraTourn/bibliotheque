@@ -36,6 +36,12 @@ function convertJson(arr){
     close[i].onclick = function() {
      var row = this.parentElement;
      row.remove();
+	 
+	 //Affichage d'un message temporaire qui confirme la suppresion d'un livre
+	 document.getElementById('notif').innerHTML = "Book succesfully removed from the list";
+	setTimeout(function() {
+	document.getElementById('notif').innerHTML = "";
+	},2000);
    }
  }
 }
@@ -85,8 +91,22 @@ function addToList() {
     close[i].onclick = function() {
       var row = this.parentElement;
       row.remove();
+	  document.getElementById('notif').innerHTML = "Book succesfully removed from the list";
+	setTimeout(function() {
+	document.getElementById('notif').innerHTML = "";
+	},2000);
     }
   }
+  
+	//Affichage d'un message temporaire qui confirme l'ajout d'un livre
+	
+	
+	document.getElementById('notif').innerHTML = "Book succesfully added to the list";
+
+	setTimeout(function() {
+	document.getElementById('notif').innerHTML = "";
+	},2000);
+  
 }
 	document.getElementById("title").value='';
 	document.getElementById("author").value='';
@@ -99,6 +119,10 @@ for (let i = 0; i < close.length; i++) {
   close[i].onclick = function() {
    var row = this.parentElement;
    row.remove();
+   document.getElementById('notif').innerHTML = "Book succesfully removed from the list";
+	setTimeout(function() {
+	document.getElementById('notif').innerHTML = "";
+	},2000);
  }
 }
     //Stockage en local du tableau de nom choisi dans les objets
