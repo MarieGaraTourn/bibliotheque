@@ -17,23 +17,26 @@
 .bouton {
 	display:inline-block;
 	padding:0.35em 1.2em;
-	border:0.1em solid #000000;
+	border:0.05em solid #000000;
 	margin:0 0.3em 0.3em 0;
 	border-radius:0.12em;
 	box-sizing: border-box;
 	text-decoration:none;
 	font-family:'Roboto',sans-serif;
 	font-weight:300;
+	font-size:15px!important;
 	color:#006666;
 	text-align:center;
 	transition: all 0.2s;
 	border-radius: 10px;
 	background-color:#FFFFFF;
+	position:relative;
+	left:45%;
 }
 
 .bouton:hover {
 	 color:#FFFFFF;
-	 background-color:#006666;
+	 background-color:rgba(0, 153, 153, 0.9);
 }
 
 .field_set2{
