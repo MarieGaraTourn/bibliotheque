@@ -21,24 +21,23 @@ function convertJson(arr){
     var td4 = row.insertCell(0);
     var td5 = row.insertCell(1);
     var td6 = row.insertCell(2);
-    var td7 = row.insertCell(3);
     td4.innerHTML = arr[i].titre;
     td5.innerHTML = arr[i].auteur;
     td6.innerHTML = arr[i].ISBN;
 
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  row.appendChild(span);
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    row.appendChild(span);
   }
   var close = document.getElementsByClassName("close");
   for (let i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-   var row = this.parentElement;
-   row.remove();
+    close[i].onclick = function() {
+     var row = this.parentElement;
+     row.remove();
+   }
  }
-}
 }
 
 //Ajoute un close sur toutes les lignes sur la suppression par ligne
@@ -71,7 +70,6 @@ function addToList() {
    var td1 = row.insertCell(0);
    var td2 = row.insertCell(1);
    var td3 = row.insertCell(2);
-   var td = row.insertCell(3);//fin de journee
    td1.innerHTML = document.getElementById("title").value;
    td2.innerHTML = document.getElementById("author").value;
    td3.innerHTML = document.getElementById("isbn").value;
@@ -93,13 +91,13 @@ function addToList() {
 }
 
 //Fonction qui supprime un élément de la liste
-/*var close = document.getElementsByClassName("close");
+var close = document.getElementsByClassName("close");
 for (let i = 0; i < close.length; i++) {
   close[i].onclick = function() {
    var row = this.parentElement;
    row.remove();
  }
-}*/
+}
     //Stockage en local du tableau de nom choisi dans les objets
    /* localStorage.setItem("arrayList", JSON.stringify(tab));//stockage des infos en local
     var storedArray = JSON.parse(localStorage.getItem("tab"));//pour la lecture des infos stockees
